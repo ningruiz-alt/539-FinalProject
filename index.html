@@ -1,22 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/html5reset.css">
-    <link rel="stylesheet" href="css/css.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Rye&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/webicon.png">
+    <title>Final project</title>
 </head>
-<body>
-    <nav>
-        <ul>
-            <li>Homepage</li>
-            <li>ARPG</li>
-            <li>FPS</li>
-            <li>CRPG</li>
-        </ul>
-    </nav>
-    <h1>Here are the Games that I enjoyed, and inspired me many thoughts</h1>
 
+<body>
+    <header>
+
+        <!-- skip to main -->
+        <div class="skip">
+            <a href="#main">Skip to Main content</a>
+        </div>
+
+        <!-- top navigation bar -->
+        <nav class="main-nav">
+            <h1 class="logo">
+                Game World
+            </h1>
+
+            <ul class="links">
+                <li>
+                    <a href="index.html" class="button active">Homepage</a>
+                </li>
+                <li>
+                    <a href="narrative.html" class="button">Narrative</a>
+                </li>
+                <li>
+                    <a href="openworld.html" class="button">Openworld</a>
+                </li>
+
+                <li>
+                    <a href="co-op.html" class="button">Co-op</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main text -->
+    <main id="main">
+        <div class="bodytext">
+            <!-- Hero introduction session -->
+            <div class="hero">
+                <h2 class="hero-title"> How games shaped My perspective</h2>
+                <p class="hero-body">
+                    This site is a small archive of the games that have stayed with me. From childhood to now, they
+                    have
+                    quietly shaped how I notice things and interact with the world.
+                </p>
+            </div>
+
+            <!-- Games that I like header-->
+            <div class="gamesec">
+                <div class="gameheader" id="games-header">
+                    <div class="gameheader-inner">
+                        <!-- text -->
+                        <div class="gameheader-text">
+                            <h2 class="section-title">Games that I like</h2>
+                            <p class="section-subtitle">
+                                A few highlights from my library. Use the genre tabs above to see
+                                more.
+                            </p>
+                        </div>
+                        <!-- gif pic-->
+                        <div>
+                            <img src="images/pixelcowboy.gif" class="cowboy" alt="moving cowboy">
+                        </div>
+                    </div>
+                </div>
+
+                <!---Card boxes-->
+                <div class="cardbox">
+
+                    <!---Open world-->
+                    <article class="game-card">
+                        <div class="game-cover"><img src="images/Reddeadredemption2.jpg"
+                                alt="Red Dead Redemption 2 cover art"></div>
+                        <p class="game-style">Open World · Story</p>
+                        <h3>Red Dead Redemption 2</h3>
+                        <p class="game-tagline">
+                            Made my first trip to the Rockies feel strangely familiar.
+                        </p>
+                    </article>
+
+                    <!---Narrative-->
+                    <article class="game-card">
+                        <div class="game-cover"><img src="images/Detroit.jpg" alt="Detroit become human cover art">
+                        </div>
+                        <p class="game-style">Narrative · Choices</p>
+                        <h3>Detroit: Become Human</h3>
+                        <p class="game-tagline">
+                            A giant decision tree hidden behind very small choices.
+                        </p>
+                    </article>
+
+                    <!---Co-op games-->
+                    <article class="game-card">
+                        <div class="game-cover"><img src="images/Rainbow-Six.jpg" alt="Rainbow-Six seige cover art">
+                        </div>
+                        <p class="game-style">Cooporation games</p>
+                        <h3>RainbowSix Seige</h3>
+                        <p class="game-tagline">
+                            Company with me through out my undergrad journey and reconnected me with my high
+                            school
+                            friends.
+                        </p>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Genres -->
+            <section>
+                <div class="gameheader" id="games-header">
+                    <div class="gameheader-inner">
+                        <!-- text -->
+                        <div class="gameheader-text">
+                            <h2 class="section-title">Genres</h2>
+                            <p class="section-subtitle">
+                                I group my games by how they feel to play, instead of strict
+                                industry genres.
+                            </p>
+                        </div>
+                        <!-- gif pic-->
+                        <div>
+                            <img src="images/eldenringgif2.gif" class="cowboy" alt="eldenring gif">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- genre card -->
+                <div class="genre-grid">
+                    <a class="genre-card" href="narrative.html">
+                        <h2 class="genre-name">Narrative Games</h2>
+                        <div class="genre-img">
+                            <img src="images/walkingdead.jpg" alt="walkingdead">
+                        </div>
+                        <p class="genre-desc">
+                            Story-first experiences where choices, characters and emotions
+                            matter most.
+                        </p>
+                        <span class="genre-link">Browse narrative games →</span>
+                    </a>
+
+                    <a class="genre-card" href="openworld.html">
+                        <h2 class="genre-name">Open world</h2>
+                        <div class="genre-img">
+                            <img src="images/horizen5.jpg" alt="horizen5">
+                        </div>
+                        <p class="genre-desc">
+                            Worlds that invite you to wander, get lost and discover things at
+                            your own pace.
+                        </p>
+                        <span class="genre-link">Browse open-world games →</span>
+                    </a>
+
+                    <a class="genre-card" href="coop.html">
+                        <h2 class="genre-name">Co-op games</h2>
+                        <div class="genre-img">
+                            <img src="images/mhw.jpg" alt="monsterhunter">
+                        </div>
+                        <p class="genre-desc">
+                            Games that are really about who you play with: friends, partners
+                            or strangers.
+                        </p>
+                        <span class="genre-link">Browse co-op games →</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <span>© 2025 Ray · Game Library</span>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
+
 </html>

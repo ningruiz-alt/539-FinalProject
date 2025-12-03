@@ -1,0 +1,387 @@
+/* General setting */
+/* RD2 color */
+:root {
+  --rdr-red: #cc0000;
+  --rdr-dark: #0a0a0a;
+  --rdr-paper: #d6cfc2;
+  --rdr-text: #e0e0e0;
+  --rdr-gold: #cda869;
+}
+
+body {
+  font-family: 'Courier Prime', 'Courier New', monospace;
+  background-color: var(--rdr-dark);
+  background-image: radial-gradient(circle at center, #1a0505 0%, #000000 100%);
+  color: var(--rdr-text);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+.section-title,
+.hero-title,
+.logo {
+  font-family: 'Rye', serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: normal;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* sections */
+.section {
+  padding: 4rem 0;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem;
+}
+
+
+/* skip to main */
+.skip a {
+  position: absolute;
+  top: -60px;
+  z-index: 999;
+  background-color: #f9c043;
+  color: #040200;
+  padding: 8px 16px;
+}
+
+.skip a:focus {
+  top: 0;
+}
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+}
+
+
+/* Navbar */
+.main-nav {
+  display: flex;
+  gap: 0.5rem;
+  background: linear-gradient(to bottom, #1a0a0a, #0a0a0a);
+  border-bottom: 2px solid var(--rdr-red);
+  padding: 1rem 2rem;
+  align-items: center;
+}
+
+.logo {
+  color: var(--rdr-red);
+  font-size: 1.8rem;
+  text-shadow: 2px 2px 0px #000;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  gap: 0.4rem 0.6rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  font-family: 'Rye', serif;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+
+  border-radius: 2px;
+  background-color: transparent;
+  color: #a0a0a0;
+  border: 1px solid #555;
+  transition: all 0.2s ease;
+}
+
+.button:hover,
+.button:focus-visible {
+  color: #fff;
+  border-color: var(--rdr-red);
+  background-color: var(--rdr-red);
+  box-shadow: 0 0 10px rgba(204, 0, 0, 0.4);
+}
+
+.button.active {
+  color: #000;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.bodytext {
+  margin: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+/* Herosection */
+.hero {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 2rem;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  color: var(--rdr-red);
+  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.8);
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 1rem;
+  display: inline-block;
+}
+
+.hero-body {
+  font-size: 1.1rem;
+  color: #bbb;
+  border-left: 3px solid var(--rdr-red);
+  padding-left: 1rem;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+/* Gamehead section*/
+.gamesec {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.gameheader {
+  border-radius: 4px;
+  background: linear-gradient(135deg, #2b0f0f, #040200);
+  border: 1px solid #441d1d;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+}
+
+.gameheader-inner {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 1rem;
+  align-items: center;
+}
+
+.cowboy {
+  width: 48px;
+  height: 48px;
+}
+
+.gameheader .section-title {
+  font-size: 1.4rem;
+}
+
+.gameheader .section-subtitle {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #a0a3b1;
+}
+
+/* Game-card showcase*/
+.cardbox {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.game-card {
+  background-color: #121212;
+  border-radius: 2px;
+  padding: 0.8rem;
+  border: 1px solid #333;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s;
+}
+
+.game-cover {
+  transform: translateY(-2px);
+  border-color: var(--rdr-red);
+}
+
+.game-style {
+  color: var(--rdr-red);
+  font-family: 'Rye', serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.3rem;
+  display: inline-block;
+}
+
+.game-tagline {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #babdc8;
+}
+
+.game-card h3,
+.genre-name {
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+  color: #ddd;
+}
+
+/* Genre */
+
+.genre-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.genre-card {
+  background-color: #121212;
+  border-radius: 2px;
+  padding: 0.8rem;
+  border: 1px solid #333;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s;
+}
+
+.genre-name {
+  color: #f9c043;
+  font-size: 1.3rem;
+}
+
+.genre-img {
+  width: 100%;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+  background-color: #000;
+  transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+
+.genre-desc {
+  font-size: 0.9rem;
+  color: #a0a3b1;
+}
+
+.genre-link {
+  color: var(--rdr-red);
+  font-family: 'Rye', serif;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.genre-card:hover .genre-img,
+.genre-card:focus-visible .genre-img {
+  transform: translateY(-2px);
+  border-color: var(--rdr-red);
+}
+
+.genre-card:hover img,
+.genre-card:focus-visible img {
+  transform: scale(1.05);
+}
+
+.genre-card:focus-visible {
+  outline: 2px solid #f9c043;
+  outline-offset: 4px;
+}
+
+/* page setting */
+
+.page-heading {
+  padding-bottom: 1rem;
+}
+
+.page-tag {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #a0a3b1;
+  margin: 0 0 0.6rem;
+}
+
+.page-title {
+  margin: 0 0 0.5rem;
+  font-size: 2rem;
+}
+
+.page-intro {
+  margin: 0;
+  max-width: 40rem;
+  font-size: 0.95rem;
+  color: #a0a3b1;
+}
+
+/* Footer  */
+
+.site-footer {
+  background-color: #000;
+  border-top: 3px solid var(--rdr-red);
+  padding: 2rem 0;
+  text-align: center;
+  font-family: 'Rye', serif;
+  letter-spacing: 0.1em;
+}
+
+.site-footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 640px) {
+  .main-nav {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    gap: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .button {
+    width: auto;
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+  .hero {
+    padding: 3.5rem 3rem 2.5rem;
+  }
+
+  .hero-title {
+    font-size: 2.6rem;
+  }
+
+  .hero-body {
+    font-size: 1rem;
+  }
+
+  .cardbox {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .cardbox .game-card:first-child {
+    grid-column: 1 / -1;
+  }
+
+  .genre-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
