@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Rye&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/webicon.png">
+    <title>539 Final project</title>
+</head>
+
+<body>
+    <header>
+
+        <!-- skip to main -->
+        <div class="skip">
+            <a href="#main">Skip to Main content</a>
+        </div>
+
+        <!-- top navigation bar -->
+        <nav class="main-nav">
+            <h1 class="logo">
+                Game World
+            </h1>
+            <ul class="links">
+                <li><a href="index.html" class="button">Homepage</a></li>
+                <li><a href="genre.html" class="button active">Genre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main id="main">
+        <!-- hero sectoin -->
+        <section class="hero">
+            <p class="page-tag">Game Library</p>
+            <h1 class="hero-title">Genres</h1>
+            <p class="hero-body">
+                These are the games that I played and enjoyed! I briefly seperated them into three genres based on my
+                experience, you can give me advices if you have any thoughts!
+            </p>
+        </section>
+
+        <!-- Tabs -->
+        <section class="section">
+            <div class="genre-tabs" role="tablist" aria-label="Filter games by genre">
+                <button class="genre-tab active" data-genre="all" role="tab" aria-selected="true">
+                    All
+                </button>
+                <button class="genre-tab" data-genre="narrative" role="tab" aria-selected="false">
+                    Narrative
+                </button>
+                <button class="genre-tab" data-genre="openworld" role="tab" aria-selected="false">
+                    Open World
+                </button>
+                <button class="genre-tab" data-genre="coop" role="tab" aria-selected="false">
+                    Co-op
+                </button>
+            </div>
+
+            <!-- Game card in genre -->
+            <div class="cardbox genre-list">
+
+                <article class="game-card" data-genre="openworld">
+                    <div class="game-cover">
+                        <img src="images/eldenring.png" alt="Elden Ring cover art" />
+                    </div>
+                    <p class="game-style">Open world · Soulslike</p>
+                    <h2>Elden Ring</h2>
+                    <p class="game-tagline">
+                        Taught me to enjoy getting lost and failing in strange, beautiful
+                        places instead of rushing to the ending.
+                    </p>
+                </article>
+
+                <article class="game-card" data-genre="openworld">
+                    <div class="game-cover">
+                        <img src="images/rdr2.jpg" alt="Red Dead Redemption 2 cover art" />
+                    </div>
+                    <p class="game-style">Open world · Story</p>
+                    <h2>Red Dead Redemption 2</h2>
+                    <p class="game-tagline">
+                        Made my first trip to the Rockies feel strangely familiar, like I
+                        had already ridden those trails before.
+                    </p>
+                </article>
+
+                <article class="game-card" data-genre="narrative">
+                    <div class="game-cover">
+                        <img src="images/Baldur's_Gate_3_cover_art.jpg" alt="Baldur's Gate 3 cover art" />
+                    </div>
+                    <p class="game-style">RPG · Party · Choice</p>
+                    <h2>Baldur's Gate 3</h2>
+                    <p class="game-tagline">
+                        A tabletop-style campaign where every decision becomes group
+                        drama.
+                    </p>
+                </article>
+
+                <article class="game-card" data-genre="narrative">
+                    <div class="game-cover">
+                        <img src="images/witcher3.jpg" alt="The Witcher 3 poster" />
+                    </div>
+                    <p class="game-style">RPG · Story · Choice</p>
+                    <h2>The Witcher 3</h2>
+                    <p class="game-tagline">
+                        Side quests that often feel more meaningful than the main story
+                        line.
+                    </p>
+                </article>
+
+                <article class="game-card" data-genre="narrative">
+                    <div class="game-cover">
+                        <img src="images/lifeisstrange.png" alt="Life is Strange cover art" />
+                    </div>
+                    <p class="game-style">Narrative · Time rewind</p>
+                    <h2>Life is Strange</h2>
+                    <p class="game-tagline">
+                        A concentrated package of teenage drama I never had in real life.
+                    </p>
+                </article>
+
+                <article class="game-card" data-genre="narrative">
+                    <div class="game-cover">
+                        <img src="images/This_War_of_Mine_header.jpg" alt="This War of Mine cover art" />
+                    </div>
+                    <p class="game-style">War · Survival</p>
+                    <h2>This War of Mine</h2>
+                    <p class="game-tagline">
+                        Forces me to see war from civilians' daily struggles instead of
+                        epic battles.
+                    </p>
+                </article>
+
+                <article class="game-card" data-genre="narrative">
+                    <div class="game-cover">
+                        <img src="images/walkingdeadcolumn.jpg" alt="The Walking Dead cover art" />
+                    </div>
+                    <p class="game-style">Episodic · Zombies</p>
+                    <h2>The Walking Dead</h2>
+                    <p class="game-tagline">
+                        A series where I constantly question whether I picked the “right”
+                        kind of cruel.
+                    </p>
+                </article>
+
+                <article class="game-card" data-genre="openworld">
+                    <div class="game-cover">
+                        <img src="images/blackmyth_wukong.jpg" alt="Black Myth: Wukong cover art" />
+                    </div>
+                    <p class="game-style">Action · Mythology</p>
+                    <h2>Black Myth: Wukong</h2>
+                    <p class="game-tagline">
+                        Made me look at real Chinese temples and Journey to the West with
+                        new eyes, noticing structure and symbolism more carefully.
+                    </p>
+                </article>
+
+                <article class="game-card" data-genre="openworld">
+                    <div class="game-cover">
+                        <img src="images/cyberpunk2077.jpg" alt="Cyberpunk 2077 cover art" />
+                    </div>
+                    <p class="game-style">Open world · Sci-fi</p>
+                    <h2>Cyberpunk 2077</h2>
+                    <p class="game-tagline">
+                        Let me walk a city where every alley feels like a different story
+                        about technology, class and power.
+                    </p>
+                </article>
+
+                <article class="game-card" data-genre="openworld">
+                    <div class="game-cover">
+                        <img src="images/deathstranding.jpg" alt="Death Stranding cover art" />
+                    </div>
+                    <p class="game-style">Open world · Exploration</p>
+                    <h2>Death Stranding</h2>
+                    <p class="game-tagline">
+                        Turned walking and delivering packages into a slow, meditative way
+                        of thinking about distance and connection.
+                    </p>
+                </article>
+
+
+                <article class="game-card" data-genre="coop">
+                    <div class="game-cover">
+                        <img src="images/ittakestwo.jpg" alt="It Takes Two cover art" />
+                    </div>
+                    <p class="game-style">Co-op · Puzzle</p>
+                    <h2>It Takes Two</h2>
+                    <p class="game-tagline">
+                        A game that forces constant communication—every mechanic is
+                        designed to make two people pay attention to each other.
+                    </p>
+                </article>
+
+                <article class="game-card" data-genre="coop">
+                    <div class="game-cover">
+                        <img src="images/rainbow_six_siege.jpg" alt="Rainbow Six Siege cover art" />
+                    </div>
+                    <p class="game-style">Tactical · Team</p>
+                    <h2>Rainbow Six Siege</h2>
+                    <p class="game-tagline">
+                        Stayed with me through undergrad and reconnected me with high
+                        school friends through late-night ranked games.
+                    </p>
+                </article>
+
+                <article class="game-card" data-genre="coop">
+                    <div class="game-cover">
+                        <img src="images/monster_hunter.jpg" alt="Monster Hunter cover art" />
+                    </div>
+                    <p class="game-style">Co-op · Boss hunts</p>
+                    <h2>Monster Hunter</h2>
+                    <p class="game-tagline">
+                        Taught me how satisfying it is to learn monster patterns together
+                        and celebrate tiny improvements after each hunt.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>©NINGRUIGAME 2025</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

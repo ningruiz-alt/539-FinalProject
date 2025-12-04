@@ -5,14 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/html5reset.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Rye&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Rye&display=swap">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="images/webicon.png">
-    <title>Final project</title>
+    <title>539 Final project</title>
 </head>
 
 <body>
@@ -30,19 +27,8 @@
             </h1>
 
             <ul class="links">
-                <li>
-                    <a href="index.html" class="button active">Homepage</a>
-                </li>
-                <li>
-                    <a href="narrative.html" class="button">Narrative</a>
-                </li>
-                <li>
-                    <a href="openworld.html" class="button">Openworld</a>
-                </li>
-
-                <li>
-                    <a href="co-op.html" class="button">Co-op</a>
-                </li>
+                <li><a href="index.html" class="button active">Homepage</a></li>
+                <li><a href="genre.html" class="button">Genre</a></li>
             </ul>
         </nav>
     </header>
@@ -52,23 +38,22 @@
         <div class="bodytext">
             <!-- Hero introduction session -->
             <div class="hero">
-                <h2 class="hero-title"> How games shaped My perspective</h2>
+                <h2 class="hero-title"> How games shaped Me</h2>
                 <p class="hero-body">
-                    This site is a small archive of the games that have stayed with me. From childhood to now, they
-                    have
-                    quietly shaped how I notice things and interact with the world.
+                    This site is an archive of the games that have stayed with me. From childhood to now, they
+                    have quietly shaped how I interact with the world.
                 </p>
             </div>
 
             <!-- Games that I like header-->
-            <div class="gamesec">
+            <div class="container">
                 <div class="gameheader" id="games-header">
                     <div class="gameheader-inner">
                         <!-- text -->
                         <div class="gameheader-text">
                             <h2 class="section-title">Games that I like</h2>
                             <p class="section-subtitle">
-                                A few highlights from my library. Use the genre tabs above to see
+                                A few highlights from my library. Use the navbar above to see
                                 more.
                             </p>
                         </div>
@@ -120,15 +105,15 @@
             </div>
 
             <!-- Genres -->
-            <section>
+            <section class="container">
                 <div class="gameheader" id="games-header">
                     <div class="gameheader-inner">
                         <!-- text -->
                         <div class="gameheader-text">
                             <h2 class="section-title">Genres</h2>
                             <p class="section-subtitle">
-                                I group my games by how they feel to play, instead of strict
-                                industry genres.
+                                I group games that I played based on on what perspective they left deepest impression to
+                                me, instead of industry genres.
                             </p>
                         </div>
                         <!-- gif pic-->
@@ -140,41 +125,38 @@
 
                 <!-- genre card -->
                 <div class="genre-grid">
-                    <a class="genre-card" href="narrative.html">
+                    <div class="genre-card">
                         <h2 class="genre-name">Narrative Games</h2>
                         <div class="genre-img">
                             <img src="images/walkingdead.jpg" alt="walkingdead">
                         </div>
-                        <p class="genre-desc">
+                        <p class="genre-p">
                             Story-first experiences where choices, characters and emotions
                             matter most.
                         </p>
-                        <span class="genre-link">Browse narrative games →</span>
-                    </a>
+                    </div>
 
-                    <a class="genre-card" href="openworld.html">
+                    <div class="genre-card">
                         <h2 class="genre-name">Open world</h2>
                         <div class="genre-img">
                             <img src="images/horizen5.jpg" alt="horizen5">
                         </div>
-                        <p class="genre-desc">
+                        <p class="genre-p">
                             Worlds that invite you to wander, get lost and discover things at
                             your own pace.
                         </p>
-                        <span class="genre-link">Browse open-world games →</span>
-                    </a>
+                    </div>
 
-                    <a class="genre-card" href="coop.html">
+                    <div class="genre-card">
                         <h2 class="genre-name">Co-op games</h2>
                         <div class="genre-img">
                             <img src="images/mhw.jpg" alt="monsterhunter">
                         </div>
-                        <p class="genre-desc">
+                        <p class="genre-p">
                             Games that are really about who you play with: friends, partners
                             or strangers.
                         </p>
-                        <span class="genre-link">Browse co-op games →</span>
-                    </a>
+                    </div>
                 </div>
             </section>
         </div>
@@ -182,9 +164,7 @@
 
     <!-- Footer -->
     <footer class="site-footer">
-        <div class="container">
-            <span>© 2025 Ray · Game Library</span>
-        </div>
+        <p>©NINGRUIGAME2025</p>
     </footer>
     <script src="js/main.js"></script>
 </body>
