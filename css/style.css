@@ -31,6 +31,7 @@ h3,
 img {
   max-width: 100%;
   display: block;
+  object-fit: cover;
 }
 
 /* sections */
@@ -93,16 +94,14 @@ header {
 
 .button {
   display: inline-block;
-  padding: 0.5rem 1.2rem;
+  padding: 0.6rem 1.2rem;
   font-family: 'Rye', serif;
   font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-
   border-radius: 2px;
-  background-color: transparent;
   color: #a0a0a0;
-  border: 1px solid #555;
+  border: 1px solid #595959;
   transition: all 0.2s ease;
 }
 
@@ -111,20 +110,19 @@ header {
   color: #fff;
   border-color: var(--rdr-red);
   background-color: var(--rdr-red);
-  box-shadow: 0 0 10px rgba(204, 0, 0, 0.4);
 }
 
 .button.active {
   color: #000;
   background-color: #fff;
-  border-color: #fff;
 }
 
+/* body section */
 .bodytext {
   margin: 2.5rem;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 /* Herosection */
@@ -138,16 +136,13 @@ header {
 .hero-title {
   font-size: 3.5rem;
   color: var(--rdr-red);
-  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.8);
   margin-bottom: 1.5rem;
   border-bottom: 1px solid #333;
   padding-bottom: 1rem;
-  display: inline-block;
 }
 
 .hero-body {
-  font-size: 1.1rem;
-  color: #bbb;
+  color: #c3c3c3;
   border-left: 3px solid var(--rdr-red);
   padding-left: 1rem;
   text-align: left;
@@ -164,9 +159,7 @@ header {
 
 .gameheader {
   border-radius: 4px;
-  background: linear-gradient(135deg, #2b0f0f, #040200);
-  border: 1px solid #441d1d;
-  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.8);
+  border: 1px solid var(--rdr-red);
   padding: 1rem;
 }
 
@@ -178,18 +171,16 @@ header {
 }
 
 .cowboy {
-  width: 48px;
-  height: 48px;
+  width: 3.5rem;
+  height: 3.5rem;
 }
 
 .gameheader .section-title {
   font-size: 1.4rem;
 }
 
-.gameheader .section-subtitle {
-  margin: 0;
-  font-size: 0.9rem;
-  color: #a0a3b1;
+.gameheader .section-text {
+  color: #a5a5a5;
 }
 
 /* Game-card showcase*/
@@ -200,17 +191,15 @@ header {
 }
 
 .game-card {
-  background-color: #121212;
-  border-radius: 2px;
+  background-color: #0e0c0c;
+  border-radius: 4px;
   padding: 0.8rem;
-  border: 1px solid #333;
-  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.5);
-  transition: transform 0.2s;
+  border: 1px solid #4f4f4f;
 }
 
 .game-cover {
   transform: translateY(-2px);
-  border-color: var(--rdr-red);
+  width: 100%;
 }
 
 .game-style {
@@ -233,11 +222,10 @@ header {
 .genre-name {
   margin-top: 0.5rem;
   font-size: 1.4rem;
-  color: #ddd;
+  color: var(--rdr-text);
 }
 
-/* Genre */
-
+/* Genre section*/
 .genre-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -246,59 +234,49 @@ header {
 
 .genre-card {
   background-color: #121212;
-  border-radius: 2px;
+  border-radius: 4px;
   padding: 0.8rem;
-  border: 1px solid #333;
-  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.5);
-  transition: transform 0.2s;
+  border: 1px solid #373737;
 }
 
 .genre-name {
-  color: #f9c043;
+  color: var(--rdr-gold);
   font-size: 1.3rem;
+  padding-bottom: 1rem;
 }
 
 .genre-img {
-  width: 100%;
+  aspect-ratio: 16/9;
   border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
-  background-color: #000;
   transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+  padding-bottom: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .genre-p {
-  font-size: 0.9rem;
   color: #a0a3b1;
 }
 
-.genre-card:hover .genre-img,
-.genre-card:focus-visible .genre-img {
+.genre-card:hover .genre-img {
   transform: translateY(-2px);
-  border-color: var(--rdr-red);
+    transform: scale(1.05);
 }
 
-.genre-card:hover img,
-.genre-card:focus-visible img {
-  transform: scale(1.05);
-}
-
-.genre-card:focus-visible {
-  outline: 2px solid #f9c043;
-  outline-offset: 4px;
-}
-
-.genre-tabs {
-  display: flex;
-  flex-wrap: wrap;
+/* Genres page card layout */
+.genrebox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 0.5rem;
-  padding: 0 2.5rem;
+  padding: 0 1rem;
   margin-bottom: 1.5rem;
+  justify-content: center;
 }
 
 .genre-tab {
-  padding: 0.35rem 0.9rem;
-  border-radius: 2px;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
   border: 1px solid #555;
   background-color: transparent;
   color: #a0a0a0;
@@ -313,9 +291,7 @@ header {
 .genre-tab:hover,
 .genre-tab:focus-visible {
   color: #fff;
-  border-color: var(--rdr-red);
   background-color: var(--rdr-red);
-  box-shadow: 0 0 10px rgba(204, 0, 0, 0.4);
 }
 
 .genre-tab.active {
@@ -324,13 +300,24 @@ header {
   border-color: #fff;
 }
 
-/* Genres page card layout：单独控制，不影响首页 */
+/* Genres page card layout */
 
 .cardbox.genre-list {
-  padding: 0 2.5rem;
+  padding: 0 1.25rem;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 1.2rem;
+}
+
+.cardbox.genre-list .game-cover {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+}
+
+.cardbox.genre-list .game-cover img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
 }
 
 /* page setting */
@@ -406,8 +393,9 @@ footer {
 }
 
 .cardbox.genre-list .game-card:first-child {
-  grid-column: auto;  
+  grid-column: auto;
 }
+
 @media (min-width: 640px) {
   .main-nav {
     flex-direction: row;
@@ -467,9 +455,9 @@ footer {
     background-color: #000;
   }
 
-  .cardbox.genre-list .game-cover img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+  .genrebox {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 }
